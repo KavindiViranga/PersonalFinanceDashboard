@@ -1,0 +1,179 @@
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form labels and inputs */
+.add-transaction-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-transaction-form input,
+.add-transaction-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+    .add-transaction-form input:focus,
+    .add-transaction-form select:focus {
+        border-color: #4caf50;
+        outline: none;
+    }
+
+/* Buttons */
+.add-transaction-form button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-transaction-form .submit-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+    .add-transaction-form .submit-btn:hover {
+        background-color: #45a049;
+        transform: translateY(-2px);
+    }
+
+.add-transaction-form .cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+    .add-transaction-form .cancel-btn:hover {
+        background-color: #e53935;
+        transform: translateY(-2px);
+    }
+
+/* Transaction list */
+.transaction-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+    .transaction-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 8px 0;
+        padding: 12px 15px;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        font-size: 14px;
+    }
+
+        .transaction-list li.income {
+            background-color: #e0f2f1;
+            color: #2e7d32;
+        }
+
+        .transaction-list li.expense {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+    .transaction-list button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #f44336;
+        font-weight: bold;
+    }
+
+/* Summary & charts */
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.charts {
+    margin-top: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Budget alert */
+.budget-alert {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff3e0;
+}
+
+    .budget-alert input {
+        padding: 8px;
+        margin-left: 10px;
+        width: 120px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+.alert-text {
+    color: #f44336;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.transactions-monthwise {
+    margin-top: 20px;
+}
+
+.month-group h3 {
+    margin-top: 20px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+    .transaction-list li.income {
+        background-color: #e0f2f1;
+    }
+
+    .transaction-list li.expense {
+        background-color: #ffebee;
+    }
